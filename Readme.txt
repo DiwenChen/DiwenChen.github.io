@@ -1,1 +1,1 @@
-Run the HomePage.html page for the website. 
+Run the index.html page for the website. 

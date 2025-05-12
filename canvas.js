@@ -10,7 +10,7 @@ document.addEventListener('keydown', function(event) {
     if (event.altKey) {
       switch (event.key) {
         case "1":
-            window.location.href = "HomePage.html";
+            window.location.href = "index.html";
             break;
         case "2":
             window.location.href = "Dashboard.html";
