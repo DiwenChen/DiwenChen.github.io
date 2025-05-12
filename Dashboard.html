@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Dashboard </title>
+
+<!-- CSS styling -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!--Left Banner-->
+<div class="left-banner">
+    <h1> Canvas </h1>
+    <hr />
+    <div class="spacer"> </div>
+
+    <!--Homepage-->
+    <p class="clickable-text"> 
+        <a href="HomePage.html"> Homepage </a>
+    </p>
+    <div class="spacer"> </div>
+
+    <!--Dashboard-->
+    <p class="clickable-text"> 
+        <a href="Dashboard.html"> Dashboard </a>
+    </p>
+    <div class="spacer"> </div>
+
+    <!--Classes-->
+    <p id="classes-link" class="clickable-text"> Classes </p>
+    <div class="spacer"> </div>
+
+    <!--App List-->
+    <p class="clickable-text"> 
+        <a href="ListApps.html"> App List </a>
+    </p>
+    <div class="spacer"> </div>
+
+    <!--Settings-->
+    <p class="clickable-text"> 
+        <a href="Settings.html"> Settings </a>
+    </p>
+</div>
+
+<!--Content to the right of the left banner-->
+<div class="right-content">
+    <h1> Dashboard </h1>
+    <hr />
+
+    <!--Bookmark Table-->
+    <table class="bookmark">
+        <caption> Bookmark </caption>
+
+        <thead>
+            <tr>
+                <th> Bookmark # </th>
+                <th> Link </th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td> 001 </td>
+                <td> 
+                    <p2 class="clickable-text">
+                        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer"> 
+                            Google </a>
+                    </p2>
+                </td>
+            </tr>
+
+            <tr>
+                <td> 002 </td>
+                <td> 
+                    <p2 class="clickable-text">
+                        <a href="https://www.desmos.com/scientific" target="_blank" rel="noopener noreferrer"> 
+                            Desmos </a>
+                    </p2>
+                </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+    
+</div>
+
+<!--Dashboard content-->
+<div class="dashboard">
+    <h1> MISSING ASSIGNMENTS !!! </h1>
+    <div class="spacer"> </div>
+
+    <!--Overdue List-->
+    <table class="overdue">
+        <caption> Overdue Assignments  </caption>
+        <thead>
+            <tr>
+                <th> Class  </th>
+                <th> Assignment </th>
+                <th> Due Date </th>
+                <th> Remove from List
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Class 2 </td>
+                <td> <p2 class="assignment"> Course Journal #2 </p2></td>
+                <td> <p2> Sep 07, 1900; 11:59 P.M. </p2> </td>
+                <td> <span style="color: red; font-size: 24px;">&#10006;</span> </td>
+            </tr>
+            <tr>
+                <td> Class 3 </td>
+                <td> <p2 class="assignment"> Activity 9 </p2></td>
+                <td> <p2> Apr 01, 2025; 09:00 A.M. </p2> </td>
+                <td> <span style="color: red; font-size: 24px;">&#10006;</span> </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    
+    <!--Dashboard format selector-->
+    <div class="filter-container">
+        <p> Dashboard Format: </p>
+        <div class="filter-group">
+            <select id="dashboardFormat" name="dashboardFormat">
+                <option value="physics">Custom List 1</option>
+                <option value="all">By Class</option>
+                <option value="cs">By Date</option>
+                <option value="cs">By Point</option>
+            </select>
+        </div>
+    </div>
+    <br>
+
+
+    <!--Upcoming List-->
+    <table class="upcoming">
+        <caption> Upcoming Assignments  </caption>
+        <thead>
+            <tr>
+                <th> Class  </th>
+                <th> Assignment </th>
+                <th> Due Date </th>
+                <th> Remove from List
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Class 2 </td>
+                <td> <p2 class="assignment"> Project 1 </p2></td>
+                <td> <p2> Sep 07, 2050; 11:59 P.M. </p2> </td>
+                <td> <span style="color: red; font-size: 24px;">&#10006;</span> </td>
+            </tr>
+            <tr>
+                <td> Class 1 </td>
+                <td> <p2 class="assignment"> Reading 10 </p2></td>
+                <td> <p2> Jun 01, 2025; 10:00 A.M. </p2> </td>
+                <td> <span style="color: red; font-size: 24px;">&#10006;</span> </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    
+</div>
+
+
+
+
+<!--Classes Sidebar-->
+<div id="sidebar" class="sidebar">
+    <h1> Classes </h1>
+    <hr />
+
+    <p class="clickable-text">
+        <a href="Class1.html"> Class 1 </a>
+    </p>
+
+    <p class="clickable-text">
+        <a href="Class2.html"> Class 2 </a>
+    </p>
+
+    <p class="clickable-text">
+        <a href="Class3.html"> Class 3 </a>
+    </p>
+</div>
+
+<!--Javascript file-->
+<script src="canvas.js"></script>
+
+</body>
+
+</html>
