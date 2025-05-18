@@ -23,13 +23,58 @@ body {
     height: 1px;
 }
 
+.resume {
+    display: flex;
+    gap: 600px;
+}
+.resume-button {
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    background-color: red;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+    position: relative;
+    top: 20px;
+}
+.resume-button:hover {
+    background-color:black;
+}
+
+.game-button {
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    background-color: green;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+    position: relative;
+    top: 20px;
+}
+.game-button:hover {
+    background-color:black;
+}
+
+.game {
+    display: flex;
+}
+.game p3 {
+    font-size: 30px;
+}
+
 .left-banner {
-    background-color:rgb(187, 10, 10);
+    background-color:rgb(13, 194, 218);
     color: white;
     position: fixed;
     top: 0;
     left: 0;
-    width: 150px;
+    width: 200px;
     height: 100%;
     padding: 20px;
     text-align: center;
@@ -102,23 +147,40 @@ body {
 
 .right-content {
     position: relative;
-    top: -25px;
-    left: 200px;
-    z-index: 0;
-    padding: 10px;
+    top: -22px;
+    left: 250px;
+    margin: 20px;
 }
 .right-content h1 {
-    font-size: 50px;
+    font-size: 60px;
+    margin-top: 60px;
 }
 .right-content h2 {
-    font-size: 40px;
+    font-size: 30px;
+}
+.right-content h3 {
+    font-size: 30px;
 }
 .right-content p {
+    margin-top: 0;
     font-size: 30px;
 }
 .right-content p2 {
-    font-size: 20px;
+    font-size: 40px;
+    font-weight: bold;
 }
+.right-content p3 {
+    font-size: 30px;
+}
+.right-content name {
+
+    font-size: 50px;
+    font-weight: bold;
+}
+.right-content .subtitle {
+    margin-top: 0; /* removes space above the paragraph */
+  }
+
 .right-content .clickable-text a,
 .right-content .clickable-text a:visited {
     color: #007BFF;
@@ -243,15 +305,16 @@ table.upcoming caption {
     gap: 10px;
 }
 .search-button {
-    height: 40px;
+    height: 50px;
     width: 200px;
-    font-size: 16px;
+    font-size: 20px;
     background-color: red;
     color:white;
     border:none;
     border-radius: 5px;
     cursor: pointer;
     font-family: inherit;
+
 }
 .search-button:hover {
     background-color:black;
@@ -316,7 +379,7 @@ table.upcoming caption {
 }
 .filter-buttons {
     display: flex;
-    gap: 70px;
+    gap: 600px;
     margin-top: 10px;
 }
 .filter-buttons button {
