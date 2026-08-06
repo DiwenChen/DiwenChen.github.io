@@ -4,21 +4,6 @@ body {
     overflow-x: hidden;
 }
 
-.top-banner {
-    background-color: rgb(187, 10, 10);
-    text-align: left;
-    padding: 20px;
-    position: relative;
-    color:white;
-    top: -25px;
-    left: 185px;
-    width: 100%;
-
-}
-.top-banner h1 {
-    font-size: 40px; 
-}
-
 .spacer {
     height: 1px;
 }
@@ -105,51 +90,16 @@ body {
     color: black;
 }
 
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: -190px; /* Start off-screen */
-    width: 200px;
-    height: 100%;
-    background-color: white;
-    padding: 20px;
-    transition: left 0.3s ease;
-    z-index: 1;
-    border: 5px solid rgb(187, 10, 10);
-    box-sizing: border-box;
-    text-align: center;
-}
-.sidebar p {
-    font-size: 25px;
-}
-.sidebar h1 {
-    font-size: 40px;
-    color: black
-}
-.sidebar a{
-    text-decoration: none;
-    color: inherit;
-}
-.sidebar hr {
-    border: 1px solid red;
-    width: 100%;
-    margin: 20px auto;
-}
-.sidebar .clickable-text {
-    font-size: 25px;
-    cursor: pointer;
-    color: black;
-}
-.sidebar .clickable-text:hover {
-    color: aqua;
-    text-decoration: underline;
-}
 
 .right-content {
-    position: relative;
-    top: -22px;
+    position: absolute;
+    top: 0px;
     left: 250px;
+    right: 20px;
     margin: 20px;
+    z-index: 1;
+
+
 }
 .right-content h1 {
     font-size: 60px;
@@ -160,6 +110,12 @@ body {
 }
 .right-content h3 {
     font-size: 30px;
+    text-decoration: underline;
+    font-weight: normal;
+}
+.right-content h4 {
+    font-size: 30px;
+    font-weight: normal;
 }
 .right-content p {
     margin-top: 0;
@@ -192,213 +148,55 @@ body {
     text-decoration: underline;
 }
 
-/* Book mark */
-table.bookmark {
-    font-family: inherit;
-    border-collapse: collapse;
-    width: 200px;
-    font-size: 15px;
-    float: right;
-    margin-right: 250px;
-}
-table.bookmark th, 
-table.bookmark td {
-    border: 2px solid crimson;
-    padding: 10px;
-    text-align: left;
-}
-table.bookmark caption {
-    caption-side: top;
-    font-weight: bold;
-    padding: 10px;
-    font-size: 30px;
-    text-align: left;
-}
 
-/* Dashboard */
-.dashboard {
+/* Left Banner Sub menu */
+.menu-item {
     position: relative;
-    top: -45px;
-    left: 200px;
-    z-index: 0;
-    padding: 10px;
-    font-family: inherit;
 }
-.dashboard h1 {
-    font-size: 40;
-    color: maroon;
-    text-decoration: underline;
+.menu-toggle {
+    cursor: pointer;
 }
-.dashboard p {
-    font-size: 30px;
+.submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: rgb(13, 194, 218);
+    min-width: 150px;
+    border-radius: 4px;
+    z-index: 3;
+    padding: 8px 0;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
 }
-.dashboard p2 {
+.submenu.show {
+    display: block;
+}
+.submenu a {
+    display: block;
+    padding: 10px 16px;
+    color: white;
+    text-decoration: none;
     font-size: 20px;
+    white-space: nowrap;
 }
-.dashboard .assignment {
-    text-decoration: underline;
-}
-.dashboard .remove {
-    text-align: center;
+.submenu a:hover {
+    background: #444;
 }
 
 
-/* Overdue tables */
-table.overdue {
-    font-family: inherit;
-    border-collapse: collapse;
-    width: 700px;
-    font-size: 20px;
-    margin-right: 250px;
-}
-table.overdue th, 
-table.overdue td {
-    border: 2px solid black;
-    padding: 10px;
-    text-align: center;
-}
-table.overdue caption {
-    caption-side: top;
-    font-weight: bold;
-    padding: 10px;
-    font-size: 30px;
-    text-align: left;
-    color:red;
-}
-
-/* upcoming assignments */ 
-table.upcoming {
-    font-family: inherit;
-    border-collapse: collapse;
-    width: 700px;
-    font-size: 20px;
-    margin-right: 250px;
-}
-table.upcoming th, 
-table.upcoming td {
-    border: 2px solid black;
-    padding: 10px;
-    text-align: center;
-}
-table.upcoming caption {
-    caption-side: top;
-    font-weight: bold;
-    padding: 10px;
-    font-size: 30px;
-    text-align: left;
-    color:black;
-}
-
-
-
-
-/* App List Styles */
-.search-input {
-    width: 800px;
-    height: 30px;
-    font-size: 16px;
-    font-family: inherit;
-}
-.search-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.search-button {
+.paper-button {
     height: 50px;
     width: 200px;
     font-size: 20px;
-    background-color: red;
+    background-color: green;
     color:white;
     border:none;
     border-radius: 5px;
     cursor: pointer;
     font-family: inherit;
-
+    position: relative;
+    margin-left: 20px;
 }
-.search-button:hover {
+.paper-button:hover {
     background-color:black;
 }
-.sort-header {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    user-select: none;
-    font-weight: bold;
-    margin: 10px;
-}
-.sort-header p {
-    margin: 0;
-    text-decoration: underline;         
-}
-.sort-header:hover {
-    color: aqua;
-}
-.sort-arrow {
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-.sort-arrow.rotate {
-    transform: rotate(90deg);
-}
-.filter-container {
-    font-family: inherit;
-}
-.filter-container p {
-    font-weight: bold;
-}
-.filter-row {
-    display: none;
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding: 10px;
-    border-radius: 10px;
-
-}
-.filter-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 200px;
-}
-.filter-group label {
-    font-size: 20px;
-}
-.filter-group select {
-    padding: 8px 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 15px;
-    width: 100%;
-}
-.filter-group select:focus {
-    border-color: #007BFF;
-}
-.filter-buttons {
-    display: flex;
-    gap: 600px;
-    margin-top: 10px;
-}
-.filter-buttons button {
-    padding: 8px 12px;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 200px;
-}
-.filter-buttons .apply-btn {
-    background-color: #007BFF;
-    color: white;
-}
-.filter-buttons .clear-btn {
-    background-color: #ccc;
-    color: black;
-}
-.filter-buttons button:hover {
-    opacity: 0.8;
-}
-
