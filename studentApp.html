@@ -22,17 +22,26 @@
     </p>
     <div class="spacer"> </div>
 
-    <!--Dashboard-->
+    <!-- Programing Projects Dashboard-->
+    <div class="menu-item">
+        <p class="clickable-text menu-toggle" data-target="projects-submenu"> 
+            Projects 
+        </p>
+        <div class="submenu" id="projects-submenu">
+            <a href="IQP.html"> IQP </a>
+            <a href="web1.html"> Web 2 </a>
+            <a href="studentApp.html"> Student App </a>
+        </div>
+    </div>
+    <div class="spacer"> </div>
+
+    <!-- Game Dashboard-->
     <p class="clickable-text"> 
         <a href="games.html"> Games </a>
     </p>
     <div class="spacer"> </div>
 
-    <!--Student App-->
-    <p class="clickable-text"> Student App </p>
-    <div class="spacer"> </div>
-
-    <!--App List-->
+    <!--Graphics-->
     <p class="clickable-text"> 
         <a href="graphics.html"> 3D Graphics </a>
     </p>
@@ -43,43 +52,60 @@
 
 <!--Content to the right of the left banner-->
 <div class="right-content">
-    <h1> Student Project Post App </h1>
-    <br>
-    <p3> 
-        In the Software Engineering class, I developed a student project post app in a team of four. <br> <br> 
-        It was built using visual studio code, python, and flask. The app handles two user types: student and faculty. <br> <br> 
-        Faculty can create project posts for students to join up. Students could browse the catalogue <br><br> 
-        and apply to interested projects. The app creates a complete experience of the process. <br>
-    </p3> <br>
+    <h1> Student App </h1>
+    <h2> Spring 2024 </h2>
+    <h4> 
+        In my freshmen year Software Engineering class, I developed a project application app in a team of four students. <br>
+        -- The app was written in python and utillizes flask and SQLAlchemy. <br>
+        -- It handles two user types: Faculty and Student. <br>
+        -- Faculty can create project posts for students to join up.  <br>
+        -- Student could browse the catalogue and apply to interested projects. <br>
+        The goal was to create a complete and smooth project application experience for all users. 
+    </h4> 
+  
+    <h2> App Showcase </h2>
+    <div class="game"> 
+        <img src="images/SApost.png" alt="SA Faculty Post" style="float: left; margin-right:50px; margin-bottom: 50px; width: 800px;border: 2px solid black;">
+        <img src="images/SAnewpost.png" alt="SA Student View" style="float: left; margin-right:50px; margin-bottom: 50px; width: 800px;border: 2px solid black;">
+    </div>
 
-    <h2> Sample Pictures: </h2>
-    <div class="game"> 
-        <img src="images/SAregister.png" alt="Cull The Weak" style="float: left; margin-right:50px; margin-bottom: 50px; width: 800px; border: 2px solid black;">
-        <img src="images/SAlogin.png" alt="Cull The Weak" style="float: left; margin-right:50px; margin-bottom: 50px; width: 800px;border: 2px solid black;">
+    <hr/>
+    <h4>
+        The app was a beginner project for students to learn the basics of web development. 
+        It was my first web development project and first team development experience. 
+        I learned about user stories, iterative development cycle, update log, product backlog, 
+        UML, interface design, component-level design (Controller, Model, View), and much more. 
+        These knowledge served as cornerstones for all my future projects. 
+
+    </h4>
+    <h2> Project UML Diagram </h2>
+    <img src="images/DatabaseUMLDiagram.png" alt="UML Diagram" 
+        style="float: left; margin-right:50px; margin-bottom: 50px; width: 1000px; height: 700px;">
+    <br> <br>
+    <div style="clear: left;">
+        <hr/>
     </div>
-    <div class="game"> 
-        <img src="images/SApost.png" alt="Cull The Weak" style="float: left; margin-right:50px; margin-bottom: 50px; width: 800px;border: 2px solid black;">
-        <img src="images/SAnewpost.png" alt="Cull The Weak" style="float: left; margin-right:50px; margin-bottom: 50px; width: 800px;border: 2px solid black;">
-    </div>
-    <div class="game"> 
-        <img src="images/SAapplication.png" alt="Cull The Weak" style="float: left; margin-right:50px; margin-bottom: 50px; width: 800px;border: 2px solid black;">
-        <img src="images/SAapprove.png" alt="Cull The Weak" style="float: left; margin-right:50px; margin-bottom: 50px; width: 800px;border: 2px solid black;">
-    </div>
+
+    <h3> 
+        To review the app, please download this folder. 
+        <a href="https://drive.google.com/drive/folders/1gdd0VFCgXKcKIehe0fPb-zISbhD2PBNc?usp=sharing">
+            <button class="paper-button">Download</button>
+        </a>
+    </h3>
+
+    <h4> 
+        Type 'python studySeeker.py' in the IDE console to host the local website. <br>    
+        For more information, please read README. 
+    </h4> <br><br>
     
-    <br>
-    <p3> To try out the app, please download the File. <br><br>
-         Type 'python studySeeker.py' in the console to host the local website. <br><br>
-    For more information, please read README. </p3> <br><br>
-    <a href="https://drive.google.com/drive/folders/1gdd0VFCgXKcKIehe0fPb-zISbhD2PBNc?usp=sharing">
-        <button class="game-button"> Download Folder </button> </a>
-    </a>
+    
 
 </div>
 
 
 
 <!--Javascript file-->
-<script src="canvas.js"></script>
+<script src="menu.js"></script>
 
 </body>
 
