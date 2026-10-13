@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Project Boss Fight </title>
+
+<!-- CSS styling -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!--Left Banner-->
+<div class="left-banner">
+    <h1> Portfolio </h1>
+    <hr />
+    <div class="spacer"> </div>
+
+    <!--Homepage-->
+    <p class="clickable-text"> 
+        <a href="index.html"> Home </a>
+    </p>
+    <div class="spacer"> </div>
+
+    <!-- Programing Projects Dashboard-->
+    <div class="menu-item">
+        <p class="clickable-text">
+            <a href="Projects.html"> Projects </a> 
+        </p>
+    </div>
+    <div class="spacer"> </div>
+
+     <!-- Game Dashboard-->
+    <div class="menu-item">
+        <p class="clickable-text">
+            <a href="Games.html"> Games </a> 
+        </p>
+    </div>
+    <div class="spacer"> </div>
+
+
+</div>
+
+<!--Content to the right of the left banner-->
+<div class="right-content">
+    <h1> Boss Fight </h1>
+    <h2> Fall Semester 2026 </h2>
+    <h4> 
+        Boss Fight was a Machine Learning course project developed by a team of five over six weeks. 
+        Our proposal was to create a boss in a Soulslike game that learns how to fight the player. 
+        To achieve this goal, we built a game in Unity and trained various AI boss bots. 
+        We ended with a model that is both difficult and interesting to fight against.
+    </h4>
+
+    <h2> Training Montage </h2>
+    <iframe width="700" height="400" src="https://www.youtube.com/embed/bXm7FenHZYQ?si=aWAsNEZcfal7zCKg" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+    </iframe>
+
+    <h2> Process </h2>
+    <h4>
+        Game: For this project, the team created a simple fighting game in the Unity Engine. 
+        The game has just the player, boss, and arena. Player can move, light attack, heavy attack, and roll. 
+        Boss can choose betweeen move, quick attack, AOE attack, and shoot projectiles. 
+        <br> <br>
+        Boss: We compiled game state as a vector and trained boss bots by letting them fight simulated player bots.
+        The boss bots were trained under the reward system; like they get points for winning and lose points for losing. 
+        Their goal was to figure out how to get maximum reward consistently.  
+        <br> <br>
+        Player: The player bots were initially hard-coded, but we eventually also trained the player bots to improve boss bots. 
+        We trained them through imitation learning, which was feeding our footages of fighting the boss for them to learn. 
+        <br> <br> 
+        Tool: The boss models were created with the ML-Agents Package of Unity, which uses Proximal Policy Optimization (PPO)
+        neural network. Its advantage is that it ensures relatively smooth and stable learning. 
+    </h4>    
+
+    <h2> Gameplay </h2>
+    <iframe width="700" height="400" src="https://www.youtube.com/embed/2DdOuN0ljNU?si=tBKpX3dlG5NBkCag" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+    </iframe>
+
+    <h4> 
+        Download the 
+        <a href="files/BossFightProjectPresentation.pdf" download>
+            presentation slides
+        </a>
+        for more information. 
+    </h4>
+    <h4>
+        Check out the game on 
+        <a href="https://littlegiant1204.itch.io/boss-fight"> itch. </a>
+    </h4>
+
+
+</div>        
+    
+</div>
+
+<!--Javascript file-->
+<script src="menu.js"></script>
+
+</body>
+
+</html>
